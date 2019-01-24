@@ -1,0 +1,21 @@
+{
+    "name": "sweiguny/ppa-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfonny Bundle for PHP-Persistence-API.",
+    "keywords": ["orm", "dbal"],
+    "homepage": "https://github.com/sweiguny/PHP-Persistence-API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Weiguny",
+            "email": "s.weiguny@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    
+    "require": {
+        "sweiguny/php-persistence-api": "dev-master",
+        "symfony/http-kernel": "^4.2",
+        "symfony/config": "^4.2"
+    }
+}
