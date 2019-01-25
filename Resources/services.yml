@@ -12,13 +12,7 @@ services:
             - "@ppa.connection"
             - "@ppa.event_dispatcher"
     ppa.connection:
+        class: PPA\dbal\Connection
         factory: ['PPA\dbal\DriverManager', getConnection]
         arguments:
             - "@ppa.event_dispatcher"
-            - "%db_type%"
-            - []
-            - "%db_user%"
-            - "%db_password%"
-            - "%db_host%"
-            - "%db_name%"
-            - "%db_port%"
