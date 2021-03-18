@@ -24,6 +24,11 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode("db_password")->end()
                     ->end()
                 ->end()
+                ->arrayNode("orm")
+                    ->children()
+                        ->scalarNode("repositories")->end()
+                    ->end()
+                ->end()
             ->end()
         ;
 
